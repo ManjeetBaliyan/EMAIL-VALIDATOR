@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  padding: 0px;
+  margin: 0px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #DB4437;
+  padding: 23px 12px;
+  color: black;
+}
+
+.logo img {
+  width: 55px;
+}
+
+span {
+  font-size: 25px;
+}
+
+ul {
+  display: flex;
+}
+
+ul li {
+  list-style: none;
+  padding: 8px 18px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+ul li a {
+  color: black;
+  text-decoration: none;
+}
+
+ul li a:hover {
+  color: #ffff00;
+}
+
+main {
+  min-height: 80vh;
+  padding: 5px;
+}
+
+.container {
+  max-width: 100vh;
+  margin: auto;
+  padding: 15px;
+  background-color: antiquewhite;
+}
+
+input[type='text']{
+  min-width: 30vw;
+  padding: 3px 12px;
+  border: 2px solid black;
+  border-radius: 4px;
+  font-size: 20px;
+  
+}
+
+.button {
+  background-color: #DB4437;
+  color: black;
+  padding: 9px 12px;
+  border: 3px solid black;
+  border-radius: 16px;
+  font-weight: 700;
+  filter: drop-shadow(4px 3px 1px black);
+  cursor: pointer;
+}
+
+.button:hover {
+  padding: 11px 14px;
+}
+
+#Result div::first-letter{
+  text-transform: uppercase;
+}
+footer {
+  background-color: #DB4437;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  padding: 20px;
+}
+
+/* For making website responsive */
+
+@media only screen and (max-width: 600px) {
+  .container {
+    font-size: 12px;
+    padding: 12px;
+    background-color: burlywood;
+  }
+
+  nav {
+    flex-direction: column;
+  }
+
+  .logo {
+    font-size: 12px;
+    padding: 6px 0px;
+  }
+
+  .logo img {
+    width: 25px;
+  }
+
+  span {
+    font-size: 20px;
+  }
+}
